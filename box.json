@@ -2,9 +2,9 @@
 	"name": "Siddarthan",
 	"description": "Text Animation using SVG paths with Anime JS",
 	"author": "Siddarthan",
-	"author-email": "siddarthan.ka@krds.fr",
-	"image": "img/thumbnail.jpg",
-	"gif": "",
+	"author-email": "siddarthan.ka@krds.com",
+	"image": "img/packshot.jpg",
+	"gif": "img/packshot.gif",
 	"tags": "SVG, Anime-js",
 	"repo-url": "https://itzmesid.github.io/svg-text-animejs/"
 }

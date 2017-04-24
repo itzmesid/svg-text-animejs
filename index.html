@@ -15,7 +15,24 @@
 		document.documentElement.className = 'js';
 	</script>
 </head>
-<body>
+<body>	
+	<nav class="boxActions">
+        <a href="#" id="previous_box" title="Previous box">
+            <img src="img/back-icon.svg" alt="back">
+        </a>
+        <a href="#" id="box_home" title="Box home">
+            <img src="img/krdsbox.svg" alt="KRDS Box">
+        </a>
+        <a href="#" id="github_repo" title="Github repo">
+            <img src="img/github.svg" alt="Github">
+        </a>
+    </nav>
+
+    <div class="demoTitle">
+		<h1>SVG Text Animation</h1>
+		<h6>A Fancy Letter Animation using SVG paths with <a href="http://anime-js.com/" target="_blank">Anime JS</a></h6>
+	</div>
+
 	<svg class="hidden">
 			<defs>
 				<symbol id="icon-arrow" viewBox="0 0 24 24">
@@ -148,7 +165,7 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Start</button></div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
 			<div class="content content--1 airfrance">
@@ -265,7 +282,7 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Start</button></div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
 			
@@ -384,7 +401,7 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Start</button></div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
 		</main>

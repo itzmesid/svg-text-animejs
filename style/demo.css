@@ -44,26 +44,26 @@ a:hover, a:focus {
 }
 
 .btn:hover {
-	color: #fff;
+	background: #3a495d;
 }
 
 .btn--start {
-	border: 2px solid;
-	border-radius: 1.85em;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 0.95em;
-	padding: 1em 2em;
-	margin: 0 auto;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
+	border: 0px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 16px;
+    margin: 0 auto;
+    background: #313e4e;
+    color: #7487ab;
+    transition: .2s;
 }
 
 /* Content */
 .content {
 	position: relative;
-	height: 28vh;
+	height: 27vh;
 	margin: 1.5vh auto;
 }
 
@@ -71,7 +71,11 @@ a:hover, a:focus {
 	position: relative;
 	text-align: center;
 	z-index: 1;
-	margin-top: -2vh;
+	margin-top: -3vh;
+}
+
+body {
+	padding: 5vh 0 2.5vh;
 }
 
 /* Related demos */
@@ -111,3 +115,52 @@ a:hover, a:focus {
 	padding: 0.5em;
 	font-size: 1em;
 }
+
+.demoTitle {
+	text-align: center;
+	padding: 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.demoTitle h1 {
+	font-size: 24px;
+	margin: 0 0 10px;
+}
+
+.demoTitle h6 {
+	font-size: 14px;
+	margin: 0 0 10px;
+	font-weight: normal;
+}
+
+.demoTitle a {
+	display: inline-block;
+	cursor: pointer;
+}
+
+@media (min-width: 50em) {
+	.demoTitle {
+		padding: 0;
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		max-width: 600px;
+		border-bottom: none;
+		z-index: 1;
+		text-align: left;
+	}
+
+	.demoTitle h1 {
+		font-size: 32px;
+		margin: 0 0 5px;
+	}
+
+	.demoTitle h6 {
+		margin: 0;
+	}
+}
+
+a:focus, a:active {
+	outline: 0;
+}
+
