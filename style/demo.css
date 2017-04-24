@@ -63,14 +63,15 @@ a:hover, a:focus {
 /* Content */
 .content {
 	position: relative;
-	max-height: 85vh;
-	min-height: 300px;
-	margin: 0 auto 5em;
+	height: 28vh;
+	margin: 1.5vh auto;
 }
 
 .content__meta {
 	position: relative;
 	text-align: center;
+	z-index: 1;
+	margin-top: -2vh;
 }
 
 /* Related demos */
