@@ -1,0 +1,112 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #27272d;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	outline: none;
+	color: #fdf7b5;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Buttons */
+
+.btn {
+	display: block;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	pointer-events: auto;
+	color: #fdf7b5;
+	border: none;
+	background: none;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+.btn--start {
+	border: 2px solid;
+	border-radius: 1.85em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.95em;
+	padding: 1em 2em;
+	margin: 0 auto;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+/* Content */
+.content {
+	position: relative;
+	max-height: 85vh;
+	min-height: 300px;
+	margin: 0 auto 5em;
+}
+
+.content__meta {
+	position: relative;
+	text-align: center;
+}
+
+/* Related demos */
+.content--related {
+	text-align: center;
+	font-weight: bold;
+	padding: 7em 0 12em;
+	margin: 10em 0 0 0;
+	background: #1c1c21;
+	position: relative;
+	z-index: 1000;
+	max-height: none;
+}
+
+.media-item {
+	display: inline-block;
+	padding: 1em;
+	vertical-align: top;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.media-item:hover .media-item__img,
+.media-item:focus .media-item__img {
+	opacity: 1;
+}
+
+.media-item__title {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1em;
+}
