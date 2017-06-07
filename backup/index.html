@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>SVG Text Animation</title>	
-	<link rel="stylesheet" href="style/normalize.css" />
-	<link rel="stylesheet" href="style/component.css" />
+	<title>SVG Text Animation</title>
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" href="style/box.css">
 	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="style/normalize.css" />
+	<link rel="stylesheet" href="style/demo.css" />
+	<link rel="stylesheet" href="style/component.css" />
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script>
 		document.documentElement.className = 'js';
 	</script>
 </head>
-<body class="demoStyle1">	
+<body>	
 	<nav class="boxActions">
         <a href="#" id="previous_box" title="Previous box">
             <img src="img/back-icon.svg" alt="back">
@@ -26,7 +29,7 @@
     </nav>
 
     <div class="demoTitle">
-		<h1><b>S</b><b>V</b><b>G</b> <span>Path Animation</span></h1>
+		<h1>SVG Text Animation</h1>
 		<h6>A Fancy Letter Animation using SVG paths with <a href="http://anime-js.com/" target="_blank">Anime JS</a></h6>
 	</div>
 
@@ -48,8 +51,8 @@
 			</defs>
 		</svg>
 		<main>
-			<div id="demoId1" class="content content--1 airfrance">
-				<svg viewBox="0 0 320 130" class="letters letters--effect-1">
+			<div class="content content--1 airfrance">
+				<svg width="100%" height="100%" viewBox="0 0 320 130" class="letters letters--effect-1">
 					<g class="letter letter--1">
 						<g class="letter__part">
 							<path class="letter__layer color-1" d="M20,96.5l13.6-25.6l14.2,25.6"/>
@@ -162,14 +165,11 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start icon-play2" aria-label="Start animation" title="Play Demo"></button></div>
-				<div class="paging">
-					<a href="#" class="icon-forward2" data-demoId="demoId2" title="Next Demo"></a>
-				</div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
-			<div id="demoId2" class="content content--1 airfrance" style="display:none;">
-				<svg viewBox="0 0 320 130" class="letters letters--effect-2">
+			<div class="content content--1 airfrance">
+				<svg width="100%" height="100%" viewBox="0 0 320 130" class="letters letters--effect-2">
 					<g class="letter letter--1">
 						<g class="letter__part">
 							<path class="letter__layer color-1" d="M20,96.5l13.6-25.6l14.2,25.6"/>
@@ -282,17 +282,13 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start icon-play2" aria-label="Start animation" title="Play Demo"></button></div>
-				<div class="paging">
-					<a href="#" class="icon-backward" data-demoId="demoId1" title="Previous Demo"></a>
-					<a href="#" class="icon-forward2" data-demoId="demoId3" title="Next Demo"></a>
-				</div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
 			
 
-			<div id="demoId3" class="content content--1 airfrance" style="display:none;">
-				<svg viewBox="0 0 320 130" class="letters letters--effect-4">
+			<div class="content content--1 airfrance">
+				<svg width="100%" height="100%" viewBox="0 0 320 130" class="letters letters--effect-4">
 					<g class="letter letter--1">
 						<g class="letter__part">
 							<path class="letter__layer color-1" d="M20,96.5l13.6-25.6l14.2,25.6"/>
@@ -405,10 +401,7 @@
 						</g>
 					</g>
 				</svg>
-				<div class="content__meta"><button class="btn btn--start icon-play2" aria-label="Start animation" title="Play Demo"></button></div>
-				<div class="paging">
-					<a href="#" class="icon-backward" data-demoId="demoId2" title="Previous Demo"></a>
-				</div>
+				<div class="content__meta"><button class="btn btn--start" aria-label="Start animation">Play</button></div>
 			</div>
 
 		</main>
@@ -416,14 +409,13 @@
 		<script src="js/text-animate.js"></script>
 		<script>
 		(function() {
-			var svgFx1 = document.querySelector('.letters--effect-1');
+			var svgFx1 = document.querySelector('.letters--effect-1'),
 				svgFx2 = document.querySelector('.letters--effect-2'),
+				//svgFx3 = document.querySelector('.letters--effect-3'),
 				svgFx4 = document.querySelector('.letters--effect-4'),
-
 				phrase1 = new Phrase(svgFx1, {
 					pathOpacityAnim : true
 				}),
-				
 				phrase2 = new Phrase(svgFx2, {
 					pathOpacityAnim: true,
 					outAnimation: {
@@ -492,20 +484,6 @@
 			svgFx2.nextElementSibling.querySelector('button').addEventListener('click', function() { phrase2.animate(); });
 			svgFx4.nextElementSibling.querySelector('button').addEventListener('click', function() { phrase4.animate(); });
 		})();
-		</script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-				$('.paging a').on('click', function(){
-					$('.content').fadeOut(300);
-					var getDemoId = $(this).attr('data-demoId');
-					console.log(getDemoId);
-					setTimeout(function(){
-						$('#' + getDemoId).fadeIn(300);
-					}, 300);
-				})
-			});
 		</script>
 </body>
 </html>
