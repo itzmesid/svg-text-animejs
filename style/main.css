@@ -107,7 +107,7 @@ a:focus, a:active {
 .content__meta {
 	position: absolute;
 	z-index: 1;
-	bottom: 50px;
+	bottom: 18%;
 	left: 50%;
 	transform: translate(-50%,0);
 }
@@ -118,6 +118,7 @@ a:focus, a:active {
     transition: .3s;
     background: transparent;
     border: 0;
+    font-size: 40px;
 }
 
 .btn--start:focus {
@@ -126,8 +127,7 @@ a:focus, a:active {
 
 .btn--start:before {
 	line-height: 1;
-	transform: translate(-50%,-50%);
-	font-size: 40px;
+	transform: translate(-50%,-50%);	
 }
 
 .btn--start:hover,
@@ -137,16 +137,23 @@ a:focus, a:active {
 
 .paging {
 	position: absolute;
-	bottom: 10px;
-	left: 50%;
-	transform: translateX(-50%);
+	bottom: 18%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0 3px 6px 0;
 }
 
-.paging a {
+.paging a,
+.paging span {
 	display: inline-block;
-	margin: 0 5px;
-	font-size: 20px;
+	margin: 0 30px;
+	font-size: 26px;
 	color: rgba(255,255,255,.5);
+}
+
+.paging span {
+	color: rgba(0,0,0,.2);
 }
 
 .letters {
@@ -180,5 +187,14 @@ a:focus, a:active {
 
 	.demoTitle h6 {
 		font-size: 16px;
+	}
+
+	.letters {
+		max-width: 98%;
+		top: 53%;
+	}
+
+	.content__meta {
+		bottom: 18%;
 	}
 }
