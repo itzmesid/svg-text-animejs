@@ -86,17 +86,17 @@
 /* Effect 4 */
 
 .letters--effect-4 .letter__layer:first-child {
-	stroke: #00966c;
+	stroke: #ff6b6c;
 	stroke-width: 10px;
 }
 
 .letters--effect-4 .letter__layer:nth-child(2) {
-	stroke: #27272d;
+	stroke: #e8ea7c;
 	stroke-width: 4px;
 }
 
 .letters--effect-4 .letter__layer:nth-child(3) {
-	stroke: #fcec9b;
+	stroke: #8e96ff;
 	stroke-width: 1px;
 }
 
@@ -108,9 +108,9 @@
 	stroke-width: 4px;
 	stroke-linejoin: round;
 }
-.airfrance svg .color-1 { stroke: #84b5bd; }
-.airfrance svg .color-2 { stroke: #f84242; }
-.airfrance svg .color-3 { stroke: #fff; }
+.airfrance svg .color-1 { stroke: #1da7ff; }
+.airfrance svg .color-2 { stroke: #ff4d4d; }
+.airfrance svg .color-3 { stroke: #ddd; }
 
 .airfrance .letters .letter__layer:first-child {
 	stroke-width: 1.5px;
